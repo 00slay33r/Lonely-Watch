@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/06f2551d6e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/Logo1.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Lonely Watch - Home</title>
+</head>
+<body>
+    <section class="section-one section" id="Home">
+        <nav>
+            <div class="logo"><img src="/src/assets/images/Logo Dark.png" alt=""></div>
+            <ul class="navlinks" id="navlinks">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Arivals">Arivals</a></li>
+                <li><a href="#Offers">Offers</a></li>
+                <li><a href="#Collection">Collection</a></li>
+                <div class="btn"><a href="#"><i class="fa fa-solid fa-wallet fa-xl"></i></a></div>
+                <div class="btn"><a href="/login/index.html"><i class="fa fa-solid fa-user fa-xl"></i></a></div>
+            </ul>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars fa-2xl"></i></div>
+        </nav>
+        <header>
+            <div class="image-container">
+                <img src="/src/assets/images/omega blue.png" class="header-image">
+            </div>
+            <div class="content">
+                <h1 class="header-heading">Pure Luxury</h1>
+                <h2 class="product-name">Blue Omega SA</h2>
+                <p class="header-pricing">$ 3,879</p>
+                <div class="btn-container">
+                    <button class="primary-btn">Discover</button>
+                    <button class="secondary-btn">Add to Cart</button>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section class="section-two section" id="Products">
+        <div class="section-two-container">
+            <div class="section-two-inner-container">
+                <div class="content">
+                    <h1 class="section-two-heading">Quartz Casio</h1>
+                    <h2 class="section-two-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti expedita magni nobis saepe ipsum! Nobis odio itaque veniam! Dolorem aut eos ipsa necessitatibus aliquam natus.</h2>
+                    <p class="section-two-pricing">$ 3,899</p>
+                    <button class="section-two-btn">Order Now</button>
+                </div>
+                <div class="image-container">
+                    <img src="/src/assets/images/product watch.png" class="section-two-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-three section" id="Arivals">
+        <h1 class="section-heading">New Arivals</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="/src/assets/images/Tissot.png" class="card-image">
+                <h2>Tissot</h2>
+                <p class="card-pricing">$ 3,988</p>
+                <button class="secondary-btn">Discover</button>
+            </div>
+            <div class="card">
+                <img src="/src/assets/images/Klassc.png" class="card-image">
+                <h2>Klassc</h2>
+                <p class="card-pricing">$ 4,988</p>
+                <button class="secondary-btn">Discover</button>
+            </div>
+            <div class="card">
+                <img src="/src/assets/images/citizen.png" class="card-image">
+                <h2>Citizen</h2>
+                <p class="card-pricing">$ 3,500</p>
+                <button class="secondary-btn">Discover</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-four section" id="Offers">
+        <div class="section-four-container">
+            <div class="content">
+                <h1 class="section-four-offer">50% off</h1>
+                <h1 class="section-four-heading">Special Collection</h1>
+                <button class="section-four-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-five section" id="Collection">
+        <h1 class="section-heading">Collection</h1>
+        <div class="grid-card-container">
+            <div class="grid-card" collection="Rado"></div>
+            <div class="grid-card" collection="Geneve"></div>
+            <div class="grid-card" collection="Tissot"></div>
+            <div class="grid-card" collection="Cartier"></div>
+            <div class="grid-card" collection="Omega"></div>
+            <div class="grid-card" collection="Fitron"></div>
+        </div>
+    </section>
+
+
+    <footer class="footer-txt">
+        <div class="row">
+            <div class="col">
+                <p class="logo1"><img src="/src/assets/images/Logo.png" alt=""></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi placeat tempora qui officia, vitae asperiores assumenda fugit sit impedit voluptatibus accusantium fuga dolor laboriosam saepe voluptatum amet corrupti quidem hic.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>Chambéry, Savoie</p>
+                <p>73230, France</p>
+                <p class="email-id">lonelywatch@outlook.com</p>
+                <h4>+33767870166</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Arivals">Arivals</a></li>
+                    <li><a href="#Offers">Offers</a></li>
+                    <li><a href="#Collection">Collection</a></li>
+                </ul>
+                
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form action="">
+                    <i class="far fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your mail" required>
+                    <button type="submit"><i class="fas fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                        <i class="fab fa-brands fa-instagram"></i>
+                        <i class="fab fa-brands fa-whatsapp"></i>
+                        <i class="fab fa-brands fa-twitter"></i>
+                        <i class="fab fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Lonely Watch. © 2025 - All Rights Rserved</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
