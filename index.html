@@ -144,6 +144,679 @@
         <hr>
         <p class="copyright">Lonely Watch. © 2025 - All Rights Reserved</p>
     </footer>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Home {
+    background: white;
+}
+#root {
+    padding: 0;
+}
+
+:root {
+    --dark-blue: #0A1D3C;
+    --light-gray: #E5E5E5;
+    --white: #FFF;
+    --light-peach: #F9E3BC;
+    --dark-gray: #3E3F43;
+    --light-black: #1D1D1D;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    margin-bottom: 10rem;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav .btn {
+    font-size: 0.9rem;
+    margin-left: 1.7rem;
+}
+
+nav .fa {
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+header {
+    width: 80%;
+    height: calc(100vh - 13vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.navlinks {
+    display: flex;
+}
+
+.header-image {
+    width: 40rem;
+}
+
+.logo {
+    font-size: 3.3rem;
+    color: var(--dark-blue);
+    font-family: "Allison", cursive;
+}
+
+.navlinks li a {
+    margin-left: 2.5rem;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    position: relative;
+}
+
+.header-heading {
+    font-size: 5rem;
+    position: relative;
+}
+
+.header-heading::before {
+    content: "New";
+    position: absolute;
+    top: -70px;
+    color: var(--dark-blue);
+    font-family: "Allison", cursive;
+}
+
+.product-name {
+    font-size: 1.7rem;
+}
+
+.header-pricing {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.primary-btn, .secondary-btn {
+    font-size: 1.1rem;
+    border: none;
+    padding: 1rem 1.7rem;
+    transition: transform .5s ease-in-out;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.primary-btn {
+    background: var(--light-gray);
+}
+
+.secondary-btn {
+    background: var(--dark-blue);
+    color: white;
+    transform: scale(1.1);
+}
+
+.primary-btn:hover, .section-two-btn:hover, .section-four-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.secondary-btn:hover {
+    transform: scale(1);
+}
+
+.navlinks li a::after, .navlinks li .active::after {
+    content: "";
+    background: var(--dark-gray);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+    transform-origin: right;
+}
+
+.navlinks li a:hover::after, .navlinks li .active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.section-two.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-two {
+    display: flex;
+    align-items: center;
+}
+
+.section-two-container {
+    background: var(--light-peach);
+    width: 100%;
+    height: 50vh;
+    transform: skewY(-6deg);
+}
+
+.section-two-image {
+    width: 28rem;
+}
+
+.section-two-inner-container {
+    transform: skewY(6deg);
+    width: 80%;
+    margin: auto;
+}
+
+.section-two-container, .section-two-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two-heading {
+    color: var(--dark-gray);
+    font-size: 4rem;
+}
+
+.section-two-para {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.8rem;
+    max-width: 80%;
+}
+
+.section-two-pricing {
+    font-size: 1.6rem;
+    color: var(--dark-gray);
+    margin: .9rem 0;
+}
+
+.section-two-btn {
+    padding: .9rem 1.7rem;
+    border: .1rem solid var(--light-black);
+    font-size: 1.1rem;
+    background: transparent;
+    transition: transform .5s ease;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 80vh;
+    padding: 20px;
+    gap: 3rem;
+}
+
+.card-image {
+    width: 20rem;
+}
+
+.card {
+    background: var(--light-gray);
+    padding: 2rem;
+}
+
+.card-pricing {
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    margin-bottom: 1.2rem;
+}
+
+.section-four {
+    display: flex;
+    align-items: center;
+}
+
+.section-four-container {
+    width: 100%;
+    height: 70vh;
+    background-image: url("/src/assets/images/watch.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.section-four-offer {
+    font-size: 4rem;
+    color: var(--light-peach);
+    font-family: "Allison", cursive;
+    text-transform: uppercase;
+}
+
+.section-four-heading {
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.section-four-btn {
+    font-size: 1.1rem;
+    padding: 1rem 1.7rem;
+    background: var(--light-peach);
+    border: none;
+    transition: transform .5s ease;
+}
+
+.section-four-container::before {
+    content: "";
+    background: rgb(0, 0, 0, 0.544);
+    position: absolute;
+    inset: 0;
+}
+
+.section-four-container .content {
+    z-index: 5;
+}
+
+.grid-card-container {
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem;
+    grid-auto-rows: 15rem;
+}
+
+.grid-card {
+    background: var(--light-gray);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-card:nth-child(1) {
+    grid-row: 1/4;
+    background-image: url("/src/assets/images/rado\ watch.jpg");
+}
+
+.grid-card:nth-child(2) {
+    background-image: url("/src/assets/images/geneve\ watch.jpg");
+}
+
+.grid-card:nth-child(3) {
+    grid-row: 1/3;
+    background-image: url("/src/assets/images/tissot\ watch.jpg");
+}
+
+.grid-card:nth-child(4) {
+    grid-row: 3/4;
+    background-image: url("/src/assets/images/cartier\ watch.jpg");
+}
+
+.grid-card:nth-child(5) {
+    background-image: url("/src/assets/images/omega\ watch.jpg");
+}
+
+.grid-card:nth-child(6) {
+    background-image: url("/src/assets/images/fitron\ watch.jpg");
+}
+
+.grid-card::before {
+    content: "";
+    position: absolute;
+    background: rgb(0, 0, 0, 0.544);
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1s ease-in-out;
+}
+
+.grid-card:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.grid-card::after {
+    cursor: pointer;
+    content: attr(collection);
+    position: absolute;
+    text-transform: uppercase;
+    background: var(--light-peach);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 1.7rem;
+    font-size: 1.1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.grid-card:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: var(--light-black);
+    padding: 5.3rem 0 3rem;
+    margin-top: 5rem;
+    line-height: 2rem;
+}
+
+.logo1 {
+    font-size: 3.3rem;
+    color: var(--white);
+    font-family: "Allison", cursive;
+    margin-bottom: 3rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 1rem;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.col h4 {
+    font-size: 1.1rem;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 0.1rem solid var(--white);
+    margin: 2rem 0;
+}
+
+.footer-txt {
+    color: white;
+    font-size: 1.4rem;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--light-gray);
+}
+
+form {
+    width: 26rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid var(--white);
+    margin-bottom: 5rem;
+}
+
+form .far {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+form input {
+    width: 85%;
+    background: transparent;
+    color: var(--white);
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.social-icons .fab {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--light-black);
+    background: var(--white);
+    margin-right: 1.1rem;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 0.1rem solid var(--white);
+    margin: 2rem auto;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 0.4rem;
+    background: #767676;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 1.5rem;
+    height: 100%;
+    background: var(--white);
+    border-radius: 0.3px;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -2rem;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-image {
+        display: none;
+    }
+    .navlinks {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        background: var(--light-gray);
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        left: 100%;
+        z-index: 2;
+        gap: 2rem;
+        transition: 1s ease-in-out;
+    }
+    .navlinks-active {
+        left: 0;
+    }
+    .navlinks li a {
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+    nav .btn {
+        margin-left: 0;
+    }
+    .hamburger {
+        display: block;
+        z-index: 5;
+    }
+    .section .logo {
+        z-index: 5;
+    }
+    .header-heading {
+        font-size: 4rem;
+    }
+    .header {
+        justify-content: flex-start;
+    }
+
+
+    .section-two-image {
+        display: none;
+    }
+    .section-two-heading {
+        font-size: 2.9rem;
+    }
+    .section-two-para {
+        font-size: .93rem;
+        max-width: 100%;
+    }
+    .section-two-pricing {
+        font-size: 1.4rem;
+    }
+    .section-two-btn {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+    .section-two-container {
+        height: 60vh;
+    }
+    .section-two-inner-container {
+        width: 90%;
+    }
+
+
+    .card-image {
+        width: 19rem;
+    }
+
+
+    .section-three {
+        margin-bottom: 60rem;
+    }
+
+
+    .section-four-heading {
+        font-size: 2.8rem;
+    }
+    .section-four--offer {
+        font-size: 3.3rem;
+    }
+    .section-four-btn {
+        font-size: 1rem;
+    }
+
+
+    .grid-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 90%;
+    }
+    .grid-card:nth-child(1), .grid-card:nth-child(3) {
+        grid-row: 1/2;
+    }
+
+
+    footer {
+        bottom: unset;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+    .social-icons {
+        display: flex
+;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons .fab {
+        margin-right: 2.2rem;
+    }
+}
+
+    </style>
     <script src="main.js"></script>
 </body>
 </html>
