@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/Logo1.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>Lonely Watch - Login</title>
+    <link rel="stylesheet" href="/login/login.css">
+</head>
+<body>
+<div class="login-container">
+        <div class="back"><a href="/index.html"><i class="material-symbols-outlined">chevron_left</i>Back</a></div>
+
+        <h2 class="form-title">Log in with</h2>
+
+        <div class="social-login">
+            <button class="social-button">
+                <img src="/src/assets/images/logos/apple.svg" alt="Apple" class="social-icon">
+                Apple
+            </button>
+            <button class="social-button">
+                <img src="/src/assets/images/logos/google.svg" alt="Google" class="social-icon">
+                Google
+            </button>
+        </div>
+
+        <p class="separator"><span>or</span></p>
+
+        <form action="#" class="login-form">
+
+            <div class="input-wrapper">
+                <i class="material-symbols-outlined">mail</i>
+                <input type="email" placeholder="Email address" class="input-field" required>
+            </div>
+            
+            <div class="input-wrapper">
+                <input type="password" placeholder="Votre mot de passe" class="input-field" required id="password-field"/>
+                <i class="material-symbols-outlined">lock</i>
+                <i id="toggle-password" class="material-symbols-outlined eye-icon" onclick="togglePasswordVisibility()">visibility_off</i>
+            </div>
+
+
+            <a href="#" class="forgot-pass-link">Forgot Password?</a>
+
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+
+        <p class="signup-text">Don't have an account? <a href="./signup">Signup now</a></p>
+    </div>
+
+    
+    
+    <script>
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById("password-field");
+            const toggleIcon = document.getElementById("toggle-password");
+    
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.textContent = "visibility";
+            } else {
+                passwordField.type = "password";
+                toggleIcon.textContent = "visibility_off";
+            }
+        }
+    </script>
+    
+</body>
+</html>
