@@ -121,6 +121,7 @@ header {
 }
 
 .primary-btn {
+    color: black;
     background: var(--light-gray);
 }
 
@@ -215,6 +216,7 @@ header {
 }
 
 .section-two-btn {
+    color: black;
     padding: .9rem 1.7rem;
     border: .1rem solid var(--light-black);
     font-size: 1.1rem;
@@ -434,6 +436,7 @@ footer p {
 }
 
 .col h4 {
+    color: var(--white);
     font-size: 1.1rem;
 }
 
@@ -550,7 +553,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 430px) {
     .logo img {
         width: 4em;
     }
@@ -646,6 +649,9 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 90%;
+    }
+    .grid-card::after {
+        visibility: visible;
     }
     .grid-card:nth-child(1), .grid-card:nth-child(3) {
         grid-row: 1/2;
