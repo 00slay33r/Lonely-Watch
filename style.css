@@ -551,6 +551,9 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+    .logo img {
+        width: 4em;
+    }
     .header-image {
         display: none;
     }
