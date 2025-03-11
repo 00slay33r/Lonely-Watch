@@ -666,6 +666,9 @@ hr {
     footer {
         bottom: unset;
     }
+    form {
+        width: 19rem;
+    }
     .col {
         flex-basis: 100%;
     }
@@ -679,6 +682,6 @@ hr {
         align-items: center;
     }
     .social-icons .fab {
-        margin-right: 2.2rem;
+        margin-right: 1.2rem;
     }
 }
